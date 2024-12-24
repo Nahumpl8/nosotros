@@ -130,19 +130,6 @@ const Title = styled.h1`
     padding: 40px 20px 0px 20px;
 `
 
-const Cupon = styled.div`
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 30px;
-    padding: 20px;
-    border-radius: 10px;
-    background-color: ${props => props.color};
-    backdrop-filter: blur(10px);
-    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1);
-`
-
 const TopSpace = styled.div`
     display: flex;
     flex-direction: column;
@@ -187,6 +174,11 @@ const Description = styled.p`
     font-size: 1.5rem;
     text-align: center;
     color: black;
+    & span {
+        font-weight: bold;
+        font-size: 1.8rem;
+        text-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+    }
 `
 
 const Caducidad = styled.p`
@@ -251,7 +243,7 @@ const SquareMessage = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     gap: 20px;
     padding: 20px;
     border-radius: 10px;
@@ -266,7 +258,17 @@ const Fecha = styled.p`
     color: black;
 `
 
-
+const Posdata = styled.p`
+    font-size: 1.5rem;
+    margin-top: 20px;
+    text-align: center;
+    color: black;
+    & span {
+        font-weight: bold;
+        font-size: 1.8rem;
+        text-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+    }
+`
 
 
 function Mensajes() {
@@ -294,7 +296,43 @@ function Mensajes() {
                         <To>Para: Claudia</To>
                         <Of>De: Nahum</Of>
                         <Description>
-                            "Verte feliz es mi más grande deseo, daría lo que fuera por ver cada segundo tu sonrisa en tu rostro, siempre lucharé por hacerte sentir la mujer más afortunada del universo entero ❤️"
+                            "Este es el primer mensaje que escribo en nuestra nueva página 😍, sé que estas epocas ya no te causan la misma emoción que antes mi niña, se que navidad se ha vuelto un día normal pero yo quise hacer que esta fuera especial con este detalle ❤️, tal vez cuando ya tengamos nuestros hijos sea mejor jiji pero por lo mientras para mi lo importante es estar a tu lado, a lado de mi familia, de mi hogar, de ti y de Winnie 🥰. Para mi no hay mejor regalo que verte feliz, enamodada de mi y que te sientas afortunada de estar en esta vida juntos!"
+
+                            Quiero que sepas que eres el amor de mi vida, que junto a ti quiero pasar el resto de mis días, que quiero verte crecer, que quiero verte feliz, que quiero verte realizada, que quiero verte enamorada, muero por saber lo que nos depara este año que estoy seguro creceremos muchísimo, cumpliremos muchas de nuestras metas y nuestros sueños pero sobre todo será nuestro primer año de esposos juntoooos!!! 😍😍😍
+
+                            Gracias por amarme como lo haces, eres la persona más increíble de este universo y eres un ejemplo para mi pesona, gracias por siempre apoyarme, impulsarme y hacerme sentir especial, te juro que nunca te fallaré mi niña hermosa!
+
+                            Te amo con todo mi corazón,
+
+                            <Posdata>
+                                <span>Feliz navidad mi esposa hermosa ❤️❤️❤️</span>
+
+                            </Posdata>
+                        </Description>
+                    </TopSpace>
+                    <BottomSpace>
+                        <Fecha>24 de Diciembre del 2024</Fecha>
+                    </BottomSpace>
+                </SquareMessage>
+                <SquareMessage>
+                    <TopSpace>
+                        <NameCupon>Regalo de Navidad</NameCupon>
+                        <To>Para: Claudia</To>
+                        <Of>De: Nahum</Of>
+                        <Description>
+                            Bueno este es otro de tus regalos de Navidad, la verdad es que me costo demasiado y fue muy complicado, no quedo como me hubiera gustado pero espero que se parezca un poco al original 🥺
+
+                            <p>
+                                Sé que es algo muy importante para ti y por eso quise hacerlo, no sé si adivines que es pero es algo que perdiste en la boda y espero que podamos tenerlo de recuerdo por mucho mucho tiempo más mi niña hermosa ❤️
+                            </p>
+                            <p>
+                                Es algo sencillo pero es con todo mi amor, para mi no hay nada más importante que tú y verte feliz, siempre lucharé por nosotros, por nuestro amor y por estar cada segundo juntos ❤️
+                            </p>
+
+                            <Posdata>
+                                <span>Te amo mi niña hermosa ❤️</span>
+
+                            </Posdata>
                         </Description>
                     </TopSpace>
                     <BottomSpace>

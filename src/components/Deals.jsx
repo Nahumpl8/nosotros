@@ -1,6 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 
 const Container = styled.div`
@@ -91,28 +92,36 @@ const DealPrice = styled.h3`
 `
 
 function Deals() {
-  return (
-    <Container>
-        <BottomDeals>
-            <DealCard>
-                <DealTitle>Fotos de nuestro último viaje</DealTitle>
-                <DealText>Encuentra fotos exclusivas de nuestro último viaje a Thailandia, Bali y Singapur donde vivimos la mejor e inolvidable 🍯🌙</DealText>
-            </DealCard>
-            <DealCard>
-                <DealTitle>Encuentra los mejores lugares para comer según nosotros 😋</DealTitle>
-                <DealText>
-                    Busca entre nuestros lugares favoritos para comer en todos los lugares que hemos visitado. ¡Te aseguramos que no te arrepentirás! 🍔🍕🍣
-                </DealText>
-            </DealCard>
-            <DealCard>
-                <DealTitle>Revíve con nosotros la mejor boda de la historia (la nuestra) 💍👰‍♀️🤵 </DealTitle>
-                <DealText>
-                    Mira las fotos y videos de nuestra boda. ¡Te aseguramos que te encantarán tanto como a nostros! 📸🎥
-                </DealText>
-            </DealCard>
-        </BottomDeals>
-    </Container>
-  )
+    return (
+        <Container>
+            <BottomDeals>
+                <DealCard>
+                    <DealTitle>Fotos de nuestro último viaje</DealTitle>
+                    <Link to="/restaurantes"
+                        style={{ textDecoration: 'none', color: 'black', width: '100%' }}
+                    >
+                        <DealText>Encuentra fotos exclusivas de nuestro último viaje a Thailandia, Bali y Singapur donde vivimos la mejor e inolvidable 🍯🌙</DealText>
+                    </Link>
+                </DealCard>
+                <DealCard>
+                    <DealTitle>Encuentra los mejores lugares para comer según nosotros 😋</DealTitle>
+                    <Link to="/restaurantes"
+                        style={{ textDecoration: 'none', color: 'black', width: '100%' }}
+                    >
+                        <DealText>
+                            Busca entre nuestros lugares favoritos para comer en todos los lugares que hemos visitado. ¡Te aseguramos que no te arrepentirás! 🍔🍕🍣
+                        </DealText>
+                    </Link>
+                </DealCard>
+                <DealCard>
+                    <DealTitle>Revíve con nosotros la mejor boda de la historia (la nuestra) 💍👰‍♀️🤵 </DealTitle>
+                    <DealText>
+                        Mira las fotos y videos de nuestra boda. ¡Te aseguramos que te encantarán tanto como a nostros! 📸🎥
+                    </DealText>
+                </DealCard>
+            </BottomDeals>
+        </Container>
+    )
 }
 
 export default Deals;
